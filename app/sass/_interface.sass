@@ -31,3 +31,20 @@
   &-active
     widht: 16px
     hieght: 16px
+
+.nav
+  &__item
+    display: inline-block
+    & + li
+      margin-left: 3rem
+
+  &__link  
+    position: relative
+    @include fontRobot(1.8rem, 2.1rem, $white)
+
+    &:hover,
+    &:focus
+     padding-bottom: 0.8rem
+     border-bottom:  1px solid $white
+
+      
