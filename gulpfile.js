@@ -13,8 +13,7 @@ gulp.task('sass', function(){
 				.pipe(autoprefixer({
 					overrideBrowserslist: ['last 8 versions']
 				}))
-				.pipe(concat('style.css'))
-				.pipe(gulp.dest('dist/css/'))
+				.pipe(gulp.dest('app/'))
 				.pipe(browserSync.reload({stream: true}))
 });
 
@@ -24,34 +23,34 @@ gulp.task('style', function(){
 	])
 		.pipe(concat('libsmin.css'))
 		.pipe(cssmin())
-		.pipe(gulp.dest('dist/css'))
+		.pipe(gulp.dest('app/'))
 });
 
 
 
 gulp.task('html', function(){
-	return gulp.src('*.html')
+	return gulp.src('app/*.html')
 		.pipe(browserSync.reload({streem: true}))
 });
 
 gulp.task('js', function(){
-	return gulp.src('app/js/*.js')
+	return gulp.src('app/*.js')
 		.pipe(browserSync.reload({streem: true}))
 });
 
 gulp.task('browser-sync', function(){
 	browserSync.init({
 		server: {
-			baseDir: "../car-sharing"
+			baseDir: "app/"
 		}
 	});
 });
 
 
 gulp.task('watch', function(){
-	gulp.watch('app/sass/*.sass', gulp.parallel('sass'))
-	gulp.watch('*.html', gulp.parallel('html'))
-	gulp.watch('app/js/*.js', gulp.parallel('js'))
+	gulp.watch('app/sass/**/*.sass', gulp.parallel('sass'))
+	gulp.watch('app/*.html', gulp.parallel('html'))
+	gulp.watch('app/*.js', gulp.parallel('js'))
 });
 
 gulp.task('default', gulp.parallel('style',  'sass', 'watch', 'browser-sync'))

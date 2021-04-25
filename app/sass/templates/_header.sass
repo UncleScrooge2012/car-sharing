@@ -5,5 +5,12 @@
   &__inner
     @include displayFlex()
 
-  &__phone
-    @include fontRobot(1.8rem, 2.1rem, $white)
+  &__phone    
+    +fontRobot(1.8rem, 2.1rem, $white)    
+    color: red
+    
+    
+    &:hover,
+    &:focus
+     padding-bottom: 0.8rem
+     border-bottom:  1px solid $white
