@@ -1,15 +1,17 @@
 .btn 
   min-width: 20rem
-  pading: 1.6rem 0 1.5rem
+  padding: 1.6rem 0 1.5rem
 
   +fontRobot(1.6rem, 1.87rem, $white)
   text-align: center
   background-color: $primary
+  border: 1px solid $primary
 
   &:hover, 
   &:focus
     background-color: $white
     color: $primary 
+    border: 1px solid $primary
 
   &-play
     pading: 0.6rem 3.4rem
@@ -17,10 +19,12 @@
   &-link
     display: inline-block
 
-.tabs
+.tab
+  display: inline-block
   width: 8px
   height: 8px
   border-radius: 50%
+  cursor: pointer
 
   &-primary
     background-color: $primary
@@ -29,8 +33,8 @@
     background-color: $main
   
   &-active
-    widht: 16px
-    hieght: 16px
+    width: 16px
+    height: 16px
 
 .nav
   &__item

@@ -16,7 +16,7 @@
 
 .btn {
   min-width: 20rem;
-  pading: 1.6rem 0 1.5rem;
+  padding: 1.6rem 0 1.5rem;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -24,11 +24,13 @@
   color: #fefefe;
   text-align: center;
   background-color: #C5AC2D;
+  border: 1px solid #C5AC2D;
 }
 
 .btn:hover, .btn:focus {
   background-color: #fefefe;
   color: #C5AC2D;
+  border: 1px solid #C5AC2D;
 }
 
 .btn-play {
@@ -39,23 +41,25 @@
   display: inline-block;
 }
 
-.tabs {
+.tab {
+  display: inline-block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.tabs-primary {
+.tab-primary {
   background-color: #C5AC2D;
 }
 
-.tabs-black {
+.tab-black {
   background-color: #332208;
 }
 
-.tabs-active {
-  widht: 16px;
-  hieght: 16px;
+.tab-active {
+  width: 16px;
+  height: 16px;
 }
 
 .nav__item {
@@ -114,6 +118,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 122rem;
   pading: 0 1rem;
@@ -161,4 +171,163 @@ a {
 
 .header__phone:hover, .header__phone:focus {
   border-bottom: 1px solid #fefefe;
+}
+
+.hero {
+  padding: 5.2rem 0 12.2rem;
+}
+
+.hero__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__titel {
+  margin-bottm: 2rem;
+  max-width: 45.4rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  color: #1b1818;
+  text-align: center;
+}
+
+.hero__subtitel {
+  margin-bottom: 6.3rem;
+  max-width: 51.4rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #1b1818;
+  text-align: center;
+}
+
+.hero__bottom {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero__link {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #1b1818;
+  border-bottom: 1px solid #1b1818;
+}
+
+.hero__link + a {
+  margin-left: 2rem;
+}
+
+.hero-slider {
+  position: relative;
+}
+
+.hero-slider__info {
+  max-width: 28.3rem;
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #1b1818;
+}
+
+.hero-slider__tabs {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+
+.hero-slider__tab + span {
+  margin-top: 1rem;
+}
+
+.hero-advantage__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-advantage__item {
+  max-width: 15rem;
+  min-height: 15rem;
+  padding: 1.8rem 1.1rem 1.4rem 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #332208;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero-advantage__item + li {
+  margin-left: 5rem;
+}
+
+.hero-advantage__info {
+  margin-top: 1.2rem;
+  text-align: center;
 }
