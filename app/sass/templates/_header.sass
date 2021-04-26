@@ -3,14 +3,16 @@
   background-color: $main
 
   &__inner
-    @include displayFlex()
+    +displayFlex(space-between, center)
+    
+   
 
   &__phone    
-    +fontRobot(1.8rem, 2.1rem, $white)    
-    color: red
-    
+    +fontRobot(1.8rem, 2.1rem, $white)        
+
+    padding-bottom: 0.8rem
+    border-bottom:  1px solid transparent 
     
     &:hover,
-    &:focus
-     padding-bottom: 0.8rem
+    &:focus     
      border-bottom:  1px solid $white
