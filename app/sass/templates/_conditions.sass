@@ -1,0 +1,57 @@
+.conditions
+  padding: 10rem 0
+
+  &__inner
+    +displayFlex(space-between, start )
+    
+  &__titel
+    margin: 0
+    margin-bottom: 3rem
+    max-width: 19rem    
+    +fontFira(2.4rem, 2.9rem, $dark)
+  &__text
+    width: 30rem
+    & + p       
+      margin: 2rem 0 4rem
+  
+  &__list
+    +displayFlex(space-between, start )
+  
+.item-condition
+  flex-direction: column
+  +displayFlex(space-between, center )
+  min-width: 25rem
+  padding: 11.5rem 0 2.5rem
+  border: 1px solid $main
+  filter:  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) 
+  &:nth-child(1)
+    padding-bottom: 4rem
+    & h3
+      margin-bottom: 3.4rem
+  &:nth-child(2)
+    padding-bottom: 3rem
+    & h3
+      margin-bottom: 4.7rem
+    & p 
+      max-width: 20.7rem
+  &:nth-child(3)
+    padding-bottom: 2.7rem
+    & h3
+      margin-bottom: 2.8rem
+
+  & + li
+    margin-left: 5rem
+  
+  
+
+  &__titel
+    margin: 0
+    max-width: 17rem
+    +fontFira(1.8rem, 2.2rem, $dark)
+    text-align: center
+
+  &__text
+    margin: 0
+    max-width: 19rem
+    text-align: center
+  
