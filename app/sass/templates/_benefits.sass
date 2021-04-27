@@ -1,0 +1,71 @@
+.benefits
+
+  &__titel
+    +fontFira(2.4rem, 2.9rem, $dark)
+  
+  &__inner
+    +displayFlex(space-between, center )
+
+  &__list
+    width: 30.8rem
+
+  &__item
+    position: relative   
+    padding-right: 2.6rem
+    display: inline-block
+    &:nth-child(1)
+      margin-left: 6.7rem
+    &:nth-child(2)
+      margin-left: 6.5rem
+    &:nth-child(3),
+    &:nth-child(5)
+      margin-left: 2.5rem
+    &:nth-child(6)
+      margin-left: 3.4rem
+    &:nth-child(7)
+      margin-left: 5.5rem
+    &::before
+      +before()
+      right: 0
+      width: 16px
+      height: 16px
+      background-color:  $main
+      border-radius: 50%
+
+
+    & + li
+      margin-top: 3rem
+  &__info
+    flex-direction: column
+    +displayFlex(space-between, flex-end )    
+
+  &__text
+    margin: 0
+    margin-bottom: 3rem
+    
+    width: 30rem
+    text-align: right
+    & + p 
+      padding-left: 2.3rem
+     
+  &__btn
+    display: inline-block
+    span
+      position: relative
+      display: block
+      text-align: center
+      padding-left: 3rem
+      &::before
+        +before()
+        left: 0
+        top: 10%
+        width: 25px
+        height: 25px
+        background: url('imgs/svg/play-icon.svg') no-repeat
+    &:hover span::before
+      background: url('imgs/svg/play-icon2.svg') no-repeat
+        
+
+     
+      
+  

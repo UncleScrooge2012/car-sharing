@@ -34,7 +34,7 @@
 }
 
 .btn-play {
-  pading: 0.6rem 3.4rem;
+  padding: 0.6rem 3.4rem;
 }
 
 .btn-link {
@@ -447,4 +447,120 @@ ul {
   margin: 0;
   max-width: 19rem;
   text-align: center;
+}
+
+.benefits__titel {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #1b1818;
+}
+
+.benefits__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__list {
+  width: 30.8rem;
+}
+
+.benefits__item {
+  position: relative;
+  padding-right: 2.6rem;
+  display: inline-block;
+}
+
+.benefits__item:nth-child(1) {
+  margin-left: 6.7rem;
+}
+
+.benefits__item:nth-child(2) {
+  margin-left: 6.5rem;
+}
+
+.benefits__item:nth-child(3), .benefits__item:nth-child(5) {
+  margin-left: 2.5rem;
+}
+
+.benefits__item:nth-child(6) {
+  margin-left: 3.4rem;
+}
+
+.benefits__item:nth-child(7) {
+  margin-left: 5.5rem;
+}
+
+.benefits__item::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #332208;
+  border-radius: 50%;
+}
+
+.benefits__item + li {
+  margin-top: 3rem;
+}
+
+.benefits__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.benefits__text {
+  margin: 0;
+  margin-bottom: 3rem;
+  width: 30rem;
+  text-align: right;
+}
+
+.benefits__text + p {
+  padding-left: 2.3rem;
+}
+
+.benefits__btn {
+  display: inline-block;
+}
+
+.benefits__btn span {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-left: 3rem;
+}
+
+.benefits__btn span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 25px;
+  height: 25px;
+  background: url("imgs/svg/play-icon.svg") no-repeat;
+}
+
+.benefits__btn:hover span::before {
+  background: url("imgs/svg/play-icon2.svg") no-repeat;
 }
