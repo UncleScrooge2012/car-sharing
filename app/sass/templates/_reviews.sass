@@ -1,0 +1,36 @@
+.reviews
+  padding: 10rem
+  background-color: $main
+  color: $white
+
+  &__titel
+    +fontFira(2.4rem, 2.9rem, $white)
+    margin-bottom: 7rem
+
+  &__list
+    +displayFlex(space-between, center )
+    margin-bottom: 3.5rem
+  
+  &__item
+    max-width: 27rem
+    padding: 4.6rem 3.1rem 4.5rem 3rem
+    border: 1px solid $primary
+
+    &-titel      
+      margin: 0
+      margin-bottom: 4.7rem
+      text-align: center
+    
+    &-text
+      margin: 0
+      text-align: center
+  &__tabs 
+    min-width: 12.4rem
+    margin: 0 auto
+    +displayFlex(center, center)
+  &__tab
+    & + span
+      margin-left: 1rem
+    
+     
+    

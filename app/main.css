@@ -449,6 +449,10 @@ ul {
   text-align: center;
 }
 
+.benefits {
+  padding: 10rem 0;
+}
+
 .benefits__titel {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
@@ -563,4 +567,67 @@ ul {
 
 .benefits__btn:hover span::before {
   background: url("imgs/svg/play-icon2.svg") no-repeat;
+}
+
+.reviews {
+  padding: 10rem;
+  background-color: #332208;
+  color: #fefefe;
+}
+
+.reviews__titel {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #fefefe;
+  margin-bottom: 7rem;
+}
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.reviews__item {
+  max-width: 27rem;
+  padding: 4.6rem 3.1rem 4.5rem 3rem;
+  border: 1px solid #C5AC2D;
+}
+
+.reviews__item-titel {
+  margin: 0;
+  margin-bottom: 4.7rem;
+  text-align: center;
+}
+
+.reviews__item-text {
+  margin: 0;
+  text-align: center;
+}
+
+.reviews__tabs {
+  min-width: 12.4rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews__tab + span {
+  margin-left: 1rem;
 }
