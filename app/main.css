@@ -631,3 +631,43 @@ ul {
 .reviews__tab + span {
   margin-left: 1rem;
 }
+
+.feedback {
+  padding: 10rem 0;
+}
+
+.feedback__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-feedblack__titel {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #1b1818;
+}
+
+.form-feedblack__subtitel {
+  margin-bottom: 5rem;
+}
+
+.form-feedblack__inner {
+  margin-bottom: 5rem;
+}
+
+.form-feedblack__input {
+  padding: 2rem 0;
+  display: block;
+  min-width: 41.4rem;
+  border: transparent;
+  border-bottom: 1px solid #000;
+}
